@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    min-height: 100vh;
+    padding: 50px 100px;
+    margin: 0 auto;
+}
+
+h1 {
+    width: 100%;
+}
+
+ul, li {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.desc {
+    margin-bottom: 20px;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 12px;
+}
+
+.item {
+    display: flex;
+    background: lightblue;
+}
+
+.item:nth-child(2n+1) {
+    background: lightcyan;
+}
+
+.item div {
+    overflow-x: scroll;
+    padding: 10px;
+}
+
+.item__id {
+    width: 5%;
+}
+
+.item__name {
+    width: 12%;
+}
+
+.item__lastName {
+    width: 12%;
+}
+
+.item__phone {
+    width: 15%;
+}
+
+.item__email {
+    width: 21%;
+}
+
+.item__date {
+    width: 10%;
+}
+
+.item__comment {
+    width: 25%;
+}
+
+.popup-wrapper {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.popup-wrapper-for-click {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.popup-wrapper_open {
+    display: flex;
+}
+
+.popup {
+    position: relative;
+    z-index: 10;
+    width: 400px;
+    padding: 20px;
+    border: 2px solid lightblue;
+    border-radius: 20px;
+    background: white;
+}
+
+.textarea {
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+.popup__button {
+    background: green;
+    color: white;
+}
